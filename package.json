@@ -1,15 +1,19 @@
 {
   "name": "quiz-app",
+  "homepage": "https://Sheesmon13.github.io/quizz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages-d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
